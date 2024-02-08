@@ -1,0 +1,90 @@
+USANDO IONIC desde 0
+-----------------------
+npm install -g @ionic/cli
+npm install @ionic/angular@latest --save
+
+npm install -g @angular/cli
+npm install -g @angular/material
+
+Crea el proyecto
+ionic start metatierrascol-app2 blank --capacitor --type angular
+
+Dentro de la carpeta del proyecto
+--añade ionic a un proyecto angular
+ng add @ionic/angular
+npm i @capacitor/splash-screen
+npm i @capacitor-community/sqlite
+
+ionic serve
+ionic build
+ionic cap add android
+ionic cap build android
+
+--------------------------------------
+LO DE ABAJO SON NOTAS, QUE CREO QUE NO HACEN FALTA
+--------------------------------------
+USANDO ANGULAR
+-----
+ng new myProject
+cd myProject
+ng add @angular/material
+ng add @ionic/angular
+
+
+npm install -g @ionic/cli
+npm install @ionic/angular@latest --save
+
+
+npm install -g @angular/cli
+npm install -g @angular/material
+
+--añade ionic a un proyecto angular
+ng add @ionic/angular
+
+--añade capacitor al proyecto
+--https://capacitorjs.com/solution/angular
+npm install @capacitor/core @capacitor/cli
+
+ng add @capacitor/angular   
+npm i @capacitor/android
+
+
+--para sqlite, la chica instala esto
+npm install cordova-sqlite-storage
+npm install @awesome-cordova-plugins/sqlite
+
+El chico instala esto
+npm i @capacitor/splash-screen
+npm i @capacitor-community/sqlite
+ionic g service services/databaseSqlite
+
+ionic start metatierrascol-app2 blank --capacitor --type angular
+#ionic start metatierrascol-app --type angular
+
+ionic serve
+ionic build
+ionic cap add android
+ionic cap build android
+
+export CAPACITOR_ANDROID_STUDIO_PATH="/home/joamona/desktopApps/android-studio/bin/studio.sh"
+ionic cap build android
+
+
+Para depurar. En chrome escribe:
+
+chrome://inspect/#devices
+
+Donde pone WebView in io.ionic.starter, debajo pulsa inspect
+
+
+Para depuración, se puede añadir que sqlite funcione en web: https://github.com/capacitor-community/sqlite/blob/master/docs/Web-Usage.md
+
+npm run build
+npx cap sync
+npx cap copy web
+ionic serve
+
+
+
+
+
